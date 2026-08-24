@@ -5,6 +5,14 @@ const STRIPE_LINK = "https://buy.stripe.com/aEU3fgfZqcq8frW3cq";
 
 const events = [
   {
+    day: "29",
+    month: "Sep",
+    title: "Troubled Waters: The Strait of Hormuz in Focus",
+    when: "29 Sep 2026, 2pm to 4pm",
+    where: "",
+    href: "https://the-mea.com/events",
+  },
+  {
     day: "6",
     month: "Oct",
     title: "Iraq and Syria Business Reception",
@@ -19,6 +27,14 @@ const events = [
     when: "12 Oct 2026",
     where: "One Great George Street, London",
     href: "https://gala-dinner.the-mea.com/",
+  },
+  {
+    day: "21",
+    month: "Oct",
+    title: "MEA Young Professionals: Connect & Network",
+    when: "21 Oct 2026, 6:30pm",
+    where: "Commercial Tavern, London",
+    href: "https://the-mea.com/events",
   },
   {
     day: "23",
@@ -146,7 +162,7 @@ const benefits = [
             <div class="event-title">{{ event.title }}</div>
             <div class="event-meta">
               <span>{{ event.when }}</span>
-              <span>{{ event.where }}</span>
+              <span v-if="event.where">{{ event.where }}</span>
             </div>
           </div>
           <span class="event-arrow" aria-hidden="true">&#8594;</span>
