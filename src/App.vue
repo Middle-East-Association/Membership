@@ -9,7 +9,7 @@ const events = [
     month: "Sep",
     title: "Troubled Waters: The Strait of Hormuz in Focus",
     when: "29 Sep 2026, 2pm to 4pm",
-    where: "",
+    where: "1 Birdcage Walk, London SW1H 9JJ",
     href: "https://the-mea.com/events",
   },
   {
@@ -41,7 +41,7 @@ const events = [
     month: "Nov",
     title: "MEA UK Roadshow 2026",
     when: "23 to 27 Nov 2026",
-    where: "UK-wide",
+    where: "Bristol, Cambridge, Newcastle, Manchester & Leeds",
     href: "https://uk-roadshow.the-mea.com/",
   },
 ];
