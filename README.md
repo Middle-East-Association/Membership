@@ -1,40 +1,25 @@
-# MEA Corporate Membership Form
+# MEA Corporate Membership
 
-A single-page membership application form that saves submissions to a Notion
-database, with a payment step at the end (Stripe link added later).
+Landing page for The Middle East Association corporate membership, built with **Vue 3 + Vite**.
 
-## What is here
+## Development
 
-- `app/page.js` — the Corporate Membership form
-- `app/api/submit/route.js` — the backend that writes to Notion (token stays server-side)
-- `app/globals.css` — styling
-- `.env.local.example` — template for the two secrets you provide
+```bash
+npm install
+npm run dev      # start the dev server (http://localhost:5173)
+npm run build    # production build to dist/
+npm run preview  # preview the production build
+```
 
-## Run it on your own computer (optional)
+## Structure
 
-1. Install Node.js (nodejs.org) if you do not have it.
-2. In this folder, run: `npm install`
-3. Copy `.env.local.example` to `.env.local` and paste in your Notion token and database ID.
-4. Run: `npm run dev` then open http://localhost:3000
+- `index.html` — Vite entry, loads fonts and mounts the app
+- `src/main.js` — bootstraps the Vue app
+- `src/App.vue` — the full single-page layout (nav, hero, about, events, benefits, join, footer)
+- `src/style.css` — global styles and design tokens
+- `public/mea-logo.png` — MEA logo
 
-## Deploy it free on Vercel (recommended)
+## Deploy
 
-1. Create a free account at vercel.com (sign in with GitHub, GitLab, or email).
-2. Push this folder to a GitHub repository, or drag-and-drop the folder into
-   Vercel's "Add New Project" import screen.
-3. Before deploying, open Project Settings -> Environment Variables and add:
-   - NOTION_TOKEN = your Notion integration secret
-   - NOTION_DATABASE_ID = your database ID
-4. Click Deploy. Vercel gives you a live URL you can send to members.
-
-The Notion token is only ever stored in Vercel's environment variables. It is
-never in the code and never visible to anyone filling in the form.
-
-## Adding Stripe later
-
-In `app/page.js`, find this commented line inside handleSubmit:
-
-    // window.location.href = "https://buy.stripe.com/your-link";
-
-Uncomment it and replace the URL with your Stripe payment link. The form will
-save details to Notion first, then send the member straight to payment.
+Any static host works. Build with `npm run build` and serve the `dist/` folder
+(e.g. Vercel, Netlify, GitHub Pages, or any static file server).
