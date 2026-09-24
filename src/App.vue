@@ -1,7 +1,7 @@
 <script setup>
 const FORM_LINK =
   "https://forms.office.com/Pages/ResponsePage.aspx?id=93QeMQRMgkCUdSPklkj5A3ns6Vp05XlKpkJF8zsFLTNUMU5STlVaMjRLR0RXQUI3M1FOTlNIWVpGOC4u";
-const STRIPE_LINK = "https://buy.stripe.com/aEU3fgfZqcq8frW3cq";
+const STRIPE_LINK = "https://buy.stripe.com/eVq14pgen23u51nbTJ8g00y";
 
 const events = [
   {
