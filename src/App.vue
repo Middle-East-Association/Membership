@@ -37,10 +37,10 @@ const events = [
     href: "https://the-mea.com/events",
   },
   {
-    day: "18",
+    day: "11",
     month: "Oct",
     title: "MEA Annual Gala Dinner 2027",
-    when: "18 Oct 2027",
+    when: "11 Oct 2027",
     where: "",
     href: "https://the-mea.com/events",
   },
