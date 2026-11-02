@@ -9,7 +9,7 @@ const events = [
     month: "Nov",
     title: "UK Roadshow 2026 — Gateway to MENA",
     when: "23 to 27 Nov 2026",
-    where: "Bristol, Cambridge, Newcastle, Manchester & Leeds",
+    where: "Newcastle, Manchester, Cambridge & London",
     href: "https://uk-roadshow.the-mea.com/",
   },
   {
